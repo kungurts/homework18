@@ -45,13 +45,12 @@ public class Main {
                     System.out.println("Введите текст для поиска: ");
                     String search = sc.nextLine();
                     String searchLower = search.toLowerCase();
+                    System.out.println("Найдено: ");
                     for (int i = 0; i < basket.size(); i++) {
                         String item = basket.get(i);
                         String itemLower = item.toLowerCase();
                         if (itemLower.contains(searchLower)) {
                             System.out.println((i + 1) + ". " + item);
-                        } else {
-                            System.out.println("Нет продуктов, подходящих под ваш запрос.");
                         }
                     }
                     break;
